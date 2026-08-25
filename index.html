@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Pomodoro</title>
+</head>
+<body>
+    <div class="settingsPanel">
+        <button id="showPanel">></button>
+        <div class="settings">
+            <p>Select your work time.</p>
+            <input type="range" min="5" max="50" value="25" class="slider" id="workTime" />
+            <p>Select your rest time.</p>
+            <input type="range" min="2" max="15" value="5" class="slider" id="restTime" />
+            <p>Select your long rest intervals.</p>
+            <input type="range" min="2" max="10" value="5" class="slider" id="longRestInterval" />
+        </div>
+    </div>
+    <main class="container">
+        <div class="timer" id="timer">25:00</div>
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="status" id="status">Focus Time</div>
+        <div class="cycleCount" id="cycleCount">Cycles completed: 0</div>
+    </main>
+    <script src="timerScript.js"></script>
+</body>
+</html>
