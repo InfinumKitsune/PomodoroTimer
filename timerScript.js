@@ -8,8 +8,8 @@ const workSound = new Audio('./getToWork.mp3');
 const breakSound = new Audio('./scoreBeep.mp3');
 const longBreakSound = new Audio('./retroFanfare.wav');
 
-let workDuration = 0.1 * 60; //seconds for work
-let restDuration = 0.1 * 60; //seconds for rest
+let workDuration = 25 * 60; //seconds for work
+let restDuration = 6 * 60; //seconds for rest
 let longRest = restDuration * 5;
 let timeLeft = workDuration;
 let longRestInterval = 5;
